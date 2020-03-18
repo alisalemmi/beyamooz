@@ -1,0 +1,23 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                      base/_base.scss                      */
+/*************************************************************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;   // 1rem = 10px
+}
+
+body {        
+    direction: rtl;
+    font-family: vazir, tahoma, arial,'sans-serif';
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
