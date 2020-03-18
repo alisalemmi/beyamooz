@@ -2,3 +2,54 @@
 /*************************************************************/
 /*                    component/_btn.scss                    */
 /*************************************************************/
+%btn--efect {
+    transition: all .2s;
+
+    &:hover {
+        @include shadow(light);
+        transform: translateY(-.4rem);
+    }
+    
+    &:active {
+        @include shadow(thin);
+        transform: translateY(-.2rem);
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: .7rem 2rem;
+
+    color: $color-white;
+    background-color: $color-primary;
+
+    text-decoration: none;
+
+    transition: all .3s;
+
+    @extend %btn--efect;
+}
+
+.btn__inline {
+    display: inline-block;
+    padding: .2rem;
+
+    color: $color-primary;
+    border-bottom: 1px solid currentColor;
+
+    text-decoration: none;
+
+    span {
+        transition: margin .2s;
+    }
+
+    @extend %btn--efect;
+
+    &:hover span {
+        margin-right: 0.3rem;
+    }
+}
+
+body {
+    padding: 15rem 40rem;
+}
