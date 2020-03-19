@@ -13,9 +13,16 @@
 
 html {
     font-size: 62.5%;   // 1rem = 10px
+
+    background-color: $color-gray-light-1;
 }
 
-body {        
+body {
+    margin: 1rem 3rem;
+
+    background-color: $color-white;
+    @include shadow(light);
+    
     direction: rtl;
     font-family: vazir, tahoma, arial,'sans-serif';
     font-size: 1.4rem;
