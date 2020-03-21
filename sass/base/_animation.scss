@@ -1,0 +1,41 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                   base/_animation.scss                    */
+/*************************************************************/
+
+// ------- floating -------- //
+@keyframes f1 {
+    from {
+		transform: translatey(0);
+	}
+	to {
+        transform: translatey(-2rem);
+    }
+}
+
+@keyframes f2 {
+    from {
+		transform: translatey(1rem);
+    }
+	to {
+        transform: translatey(-1rem);
+    }
+}
+
+@keyframes f3 {
+    from {
+		transform: translatey(1.5rem);
+	}
+	to {
+        transform: translatey(-.5rem);
+    }
+}
+
+@keyframes f4 {
+    from {
+		transform: translatey(0);
+	}
+	to {
+        transform: translatey(1.5rem);
+    }
+}
