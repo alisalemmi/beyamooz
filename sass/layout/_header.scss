@@ -13,7 +13,8 @@
     grid-template-rows: repeat(12, 1fr);
 
     overflow: hidden;
-
+    
+    // --------- text ---------- //
     &__title-box {
         position: absolute;
         top: 45%;
@@ -22,7 +23,9 @@
         transform: translate(-50%, -50%);
         z-index: 1;
     }
+    
     .h1 {
+        margin-bottom: 1rem;
         text-align: center;
     }
 
@@ -30,16 +33,16 @@
         text-align: center;
     }
 
-    & > img {
+    // --------- image --------- //
+    > img {
         display: block;
         height: 100%;
+        max-width: 100%;
         justify-self: center;
 
-        &::selection {
-            background: none;
-        }
+        user-select: none;
     }
-
+    
     &__icon {
         &--cs {
             grid-column: 8;
@@ -122,8 +125,8 @@
 
         &--vue {
             grid-column: 4;
-            grid-row: 5;
-            animation: f1 3.2s -1.5s ease-in-out infinite both alternate;
+            grid-row: 4;
+            animation: f1 3.2s ease-in-out infinite both alternate;
         }
 
         &--angular {
