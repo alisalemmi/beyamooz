@@ -5,8 +5,8 @@
 
 .header {
     position: relative;
-    padding: 5vh;
-    height: 90vh;
+    padding: $p-header;
+    height: calc(100vh - 2 * ( #{$m-body + $p-nav}) - 4rem);
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
