@@ -12,6 +12,7 @@
 }
 
 html {
+    padding: $m-body;
     min-height: 100vh;
 
     display: flex;
@@ -24,8 +25,7 @@ html {
 }
 
 body {
-    margin: $m-body;
-    width: 100%;
+    flex: 100%;
 
     background-color: $color-white;
     border-radius: $border-radius;
