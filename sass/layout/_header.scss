@@ -6,7 +6,7 @@
 .header {
     position: relative;
     padding: $p-header;
-    height: calc(100vh - 2 * ( #{$m-body + $p-nav}) - 4rem);
+    height: calc(100vh - ( #{$m-body + 2 * $p-nav} + 4rem));
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
