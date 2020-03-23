@@ -74,3 +74,11 @@
 .h1 {
     font-weight: 500;
 }
+
+.h2 {
+    margin-bottom: 2 * $ptb-section;
+
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
