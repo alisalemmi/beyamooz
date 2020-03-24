@@ -40,3 +40,8 @@ body {
 
     overflow-x: hidden;
 }
+
+section {
+    padding: $ptb-section $prl-section;
+    min-height: 100vh;
+}

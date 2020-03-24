@@ -1,4 +1,5 @@
 @import 'var';
+
 // -------- shadow --------- //
 @mixin shadow($type) {
     @if $type == thin {
@@ -13,4 +14,13 @@
     @else if $type == dark {
         box-shadow: 0 5rem 10rem rgba($color: $color-black, $alpha: .5);
     }
+}
+
+// -------- display -------- //
+// use for centering sectoin with the h2 and one other element
+@mixin section-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
