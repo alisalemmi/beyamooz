@@ -1,0 +1,16 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                 component/_grid-box.scss                  */
+/*************************************************************/
+
+.grid-box {
+    flex: 0 1 110rem;
+        
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 8rem 4rem;
+
+    color: $color-gray-dark-1;
+}
