@@ -14,6 +14,10 @@
     @else if $type == dark {
         box-shadow: 0 5rem 10rem rgba($color: $color-black, $alpha: .5);
     }
+
+    @else if $type == card {
+        box-shadow: 0 1rem 5rem rgba($color: $color-black, $alpha: .3);
+    }
 }
 
 // -------- display -------- //
