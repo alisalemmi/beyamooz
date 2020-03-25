@@ -86,14 +86,15 @@
 }
 
 .h4 {
-    // margin: 1rem 0;
-    padding: .7rem 0;
-    grid-column: 1 / -1;
-
-    color: $color-white;
-    background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 300;
     text-align: center;
+
+    &::before {
+        content: 'آموزش';
+        display: block;
+
+        color: $color-gray-dark-2;
+        font-size: 1.2rem;
+    }
 }
