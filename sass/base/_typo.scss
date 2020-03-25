@@ -84,3 +84,16 @@
 
     flex: 100%; //استفاده می کنند section-center برای استفاده در بخش هایی که از 
 }
+
+.h4 {
+    // margin: 1rem 0;
+    padding: .7rem 0;
+    grid-column: 1 / -1;
+
+    color: $color-white;
+    background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
