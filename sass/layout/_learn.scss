@@ -17,9 +17,10 @@
         grid-template-columns: 3rem 1fr;
         gap: 1.5rem 1rem;
 
-        // background-color: $color-white;
         @include shadow(card);
         border-radius: $border-radius / 2;
+
+        transition: all .5s;
     }
 
     &__img {
@@ -75,5 +76,10 @@
     .btn {
         grid-column: 1 / -1;
         justify-self: center;
+    }
+
+    &__card:hover {
+        @include shadow(card--hover);
+        transform: translateY(-1.5rem);
     }
 }

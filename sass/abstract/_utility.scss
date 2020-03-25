@@ -16,7 +16,10 @@
     }
 
     @else if $type == card {
-        box-shadow: 0 1rem 5rem rgba($color: $color-black, $alpha: .3);
+        box-shadow: 0 1rem 3rem .5rem rgba($color: $color-black, $alpha: .3);
+    }
+    @else if $type == card--hover {
+        box-shadow: 0 2rem 5rem 1rem rgba($color: $color-black, $alpha: .3);
     }
 }
 
