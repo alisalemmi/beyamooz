@@ -1,0 +1,29 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                    layout/_footer.scss                    */
+/*************************************************************/
+
+.footer {
+    padding: $ptb-section $prl-section 0 $prl-section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $color-gray-light-2;
+    background-color: $color-gray-dark-1;
+
+    &__title {
+        color: $color-white;
+        font-size: 1.6rem;
+    }
+
+    &__text {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    &__copy {
+        padding-bottom: 1rem;
+    }
+}
