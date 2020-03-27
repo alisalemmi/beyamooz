@@ -69,4 +69,14 @@
         text-align: justify;
         line-height: 1.8;
     }
+
+    &--trick {
+        .h4::before {
+            content: 'ترفند';
+        }
+    
+        .card__detail {
+            background-color: $color-secondary;
+        }
+    }
 }

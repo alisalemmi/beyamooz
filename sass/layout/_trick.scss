@@ -1,0 +1,14 @@
+@import '../abstract/var';
+/*************************************************************/
+/*                    layout/_trick.scss                     */
+/*************************************************************/
+
+.trick {
+    @include section-center;
+
+    background-color: $color-gray-light-1;
+
+    .grid-box {
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    }
+}
