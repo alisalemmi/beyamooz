@@ -4,81 +4,9 @@
 /*************************************************************/
 
 .learn {
-    $p: 1.5rem;
-
     @include section-center;
 
     .grid-box {
         grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    }
-
-    /* --------- card ---------- */
-    &__card {
-        padding-top: $p;
-
-        display: grid;
-        grid-template-rows: repeat(2, min-content) 1fr min-content;
-        row-gap: $p;
-
-        color: $color-gray-dark-1;
-        @include shadow(card);
-        border-radius: $border-radius / 2;
-        overflow: hidden;
-
-        text-decoration: none;
-
-        transition: all .5s;
-    }
-
-    /* -------- detail --------- */
-    &__img {
-        display: block;
-        height: 10rem;
-
-        justify-self: center;
-    }
-
-    &__detail {
-        padding: .5rem 0;
-
-        display: flex;
-        justify-content: space-between;
-        
-        color: $color-white;
-        background: $color-primary;
-
-        > div {
-            flex: 1;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__title {
-            margin-bottom: 0.5rem;
-
-            color: $color-gray-light-1;
-            font-size: .9rem;
-        }
-
-        &__sub {
-            font-size: 1.4rem;
-        }
-    }
-
-    &__text {
-        padding: 0 $p;
-
-        font-size: 1.3rem;
-        font-weight: 300;
-        text-align: justify;
-        line-height: 1.8;
-    }
-
-    /* --------- hover --------- */
-    &__card:hover {
-        @include shadow(card--hover);
-        transform: translateY(-1.5rem);
-    }
+    }    
 }
