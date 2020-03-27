@@ -12,6 +12,7 @@
         grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     }
 
+    /* --------- card ---------- */
     &__card {
         padding-top: $p;
 
@@ -29,6 +30,7 @@
         transition: all .5s;
     }
 
+    /* -------- detail --------- */
     &__img {
         display: block;
         height: 10rem;
@@ -57,22 +59,24 @@
             margin-bottom: 0.5rem;
 
             color: $color-gray-light-1;
-            font-size: 1rem;
+            font-size: .9rem;
         }
 
         &__sub {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 
     &__text {
         padding: 0 $p;
 
+        font-size: 1.3rem;
         font-weight: 300;
         text-align: justify;
         line-height: 1.8;
     }
 
+    /* --------- hover --------- */
     &__card:hover {
         @include shadow(card--hover);
         transform: translateY(-1.5rem);
